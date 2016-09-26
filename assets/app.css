@@ -7,7 +7,9 @@ body{
 
 
 .bounce{
-	animation-delay: 3.5s;
+/*	animation-delay: 3.5s;
+ *	
+ */
 	animation: bounce 1.5s infinite;
 
 }
@@ -21,7 +23,9 @@ body{
         animation-property: opacity;
 	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
-	animation-delay: 1.5s;
+	/*animation-delay: 1.5s;
+	 * 
+	 */
 	animation-duration: 2s;
 }
 @keyframes bounce{
@@ -145,3 +149,186 @@ body{
         opacity: 1;
     }
 }
+/*
+Stuff for the website animation loader
+*/
+
+
+.loader {
+  height: 100px;
+  width: 1vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader--dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  border: 2px solid white;
+  background-position: 50%;
+  background: white;
+}
+.loader--dot:first-child {
+  height: 200px;
+  width: 200px;
+  background: #E5E5E5;
+  background-size: contain;
+  animation-delay: 0.4s;
+  z-index: 1;
+  background: #E5E5E5;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+  background-position: 50%;
+}
+.loader--dot:first-child img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  opacity: 0;
+  animation-name: loader1;
+  animation-duration: 2s;
+  animation-property: opacity;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.loader--dot:nth-child(2) {
+  animation-delay: 0.5s;
+  z-index: 0;
+  text-align: center;
+  display: block;
+  animation-name: loader2;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.loader--dot:nth-child(2) i {
+  verticle-align: middle;
+  height: inherit;
+  margin: 0 auto;
+  font-size: 6.25em;
+}
+.loader--dot:nth-child(3) {
+  animation-delay: 0.5s;
+  z-index: 0;
+  text-align: center;
+  display: block;
+  animation-name: loader3;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.loader--dot:nth-child(3) i {
+  verticle-align: middle;
+  height: inherit;
+  padding-top: 10%;
+  margin: 0 auto;
+  font-size: 4.5em;
+}
+.loader--dot:nth-child(4) {
+  animation-delay: 0.5s;
+  z-index: 0;
+  text-align: center;
+  display: block;
+  animation-name: loader4;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-align-content: center;
+}
+.loader--dot:nth-child(4) i {
+  verticle-align: middle;
+  height: inherit;
+  margin: 0 auto;
+  padding-top: 10%;
+  font-size: 4.5em;
+}
+.loader--dot:nth-child(5) {
+  animation-delay: 0.5s;
+  z-index: 0;
+  text-align: center;
+  display: block;
+  animation-name: loader5;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.loader--dot:nth-child(5) i {
+  verticle-align: middle;
+  height: inherit;
+  margin: 0 auto;
+  padding-top: 10%;
+  font-size: 4.5em;
+}
+.loader--text {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  width: 4rem;
+  margin: auto;
+}
+.loader--text:after {
+  content: "Loading";
+  font-weight: bold;
+  animation-name: loading-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes loader2 {
+  from {
+    transform: translateX(0);
+    background: #E5E5E5;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+@keyframes loader3 {
+  from {
+    transform: translateX(0);
+    background: #E5E5E5;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+  }
+  to {
+    transform: translateX(-200px);
+  }
+}
+@keyframes loader4 {
+  from {
+    transform: translateX(0);
+    background: #E5E5E5;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+  }
+  to {
+    transform: translateX(-400px);
+  }
+}
+@keyframes loader5 {
+  from {
+    transform: translateX(0);
+    background: #E5E5E5;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+
+
