@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="personalWebsite">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>The Personal Webpage of Akshay Verma</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel=
+    "stylesheet">
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    integrity=
+    "sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+    rel="stylesheet">
+    <link href=
+    "https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css"
+    rel="stylesheet">
+    <link href="./assets/app.css" rel="stylesheet">
+</head>
+<body ng-cloak=""> 
+    <div ng-controller="mainController as main">
+	    <div ng-show="main.front" class="hide-typing">
+            <div class="typing">
+                <span class="element"></span> <span class=
+                "typed-cursor"></span>
+	    </div>
+        </div>
+        <div>
+            <div class="down-icon" layout="row" layout-align="center end">
+                <div class="bounce">
+                    <i class="fa fa-chevron-circle-down fa-5x" ng-click=
+                    "main.front=!main.front"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div ng-show="!main.front" ng-click="main.front = !main.front" layout="row" layout-align="center end" class="box-one">
+	    <p style="color:white">hello</p>
+    </div>
+<button ng-click="main.front = !main.front">Toggle Box One</button>
+    
+    <div class="box-one" ng-show="main.front">
+      Hello! I am <b>box one</b>.
+    </div>-->
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+        <script src="./node_modules/angular-aria/angular-aria.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script> 
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js">
+    </script> 
+    <script src="./node_modules/angular/angular.js">
+    </script> 
+    <script src="./node_modules/angular-animate/angular-animate.js">
+    </script> 
+    <script src="./node_modules/angular-aria/angular-aria.js">
+    </script> 
+    <script src="./node_modules/angular-material/angular-material.js">
+    </script> 
+    <script src="./angular-typewrite/scripts/scripts.js">
+    </script> 
+    <script src="./dist/controllers/maincontroller.js">
+    </script> 
+    <script src="./dist/boot.js">
+    </script>
+</body>
+</html>
