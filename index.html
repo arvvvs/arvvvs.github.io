@@ -20,7 +20,7 @@
 </head>
 <body ng-cloak=""> 
     <div layout-fill layout="column" ng-controller="mainController as main" >
-	    <!--<div flex="70" ng-show="main.front" class="hide-typing">
+	    <div flex="70" ng-show="main.front" class="hide-typing">
             <div class="typing">
                 <span class="element"></span> <span class=
                 "typed-cursor"></span>
@@ -35,9 +35,9 @@
                 </div>
             </div>
         </div>
-	</div>-->
+	</div>
 
-  <div hide show-gt-md flex class="loader"> 
+  <div hide show-gt-md flex ng-hide="main.front" class="loader"> 
     <div class="loader--dot"><img src="http://arverma.me/img/mainImage.jpg"></im></div>
      <div class="loader--dot"><i class="logo lightcolor ultradarkbgcolor fa fa-github"></i></div>
     <div class="loader--dot"><i class="fa fa-linkedin"></i></div>
