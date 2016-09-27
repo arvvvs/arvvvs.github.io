@@ -4,7 +4,9 @@ body{
 	background-color: black;
 }
 
-
+.size{
+	height: 70%;
+}
 
 .bounce{
 /*	animation-delay: 3.5s;
@@ -150,6 +152,33 @@ body{
     }
 }
 /*
+ * animation for the down button to the loader
+ */
+
+.size.ng-hide-add{
+	-webkit-animation: 0.5s fadeToCenter;
+	animation: 1.5s fadeToCenter;
+}
+.to-loader.ng-hide-add{
+	position: static;
+	animation-delay: 0.5s;
+	-webkit-animation: 1s fadeToCenter;
+	animation: 1s fadeToCenter;
+}
+@keyframes fadeToCenter{
+	from{
+		opacity: 1;
+	}
+	to{
+		color: white;
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+
+		transform: translate3d(0, -100%, 0);
+}
+}
+
+/*
 Stuff for the website animation loader
 */
 
@@ -167,36 +196,52 @@ Stuff for the website animation loader
   justify-content: center;
   align-items: center;
 }
+@keyframes appear{
+	from {
+		opacity: 1
+	}
+	to {
+		opacity: 0;
+	}
+}
 .loader--dot {
   height: 100px;
   width: 100px;
   border-radius: 100%;
   position: absolute;
-  border: 2px solid white;
+  //border: 2px solid white;
   background-position: 50%;
-  background: white;
+ // background: white;
 }
 .loader--dot:first-child {
   height: 200px;
   width: 200px;
-  background: #E5E5E5;
   background-size: contain;
-  animation-delay: 0.4s;
+  animation-delay: 7s;
   z-index: 1;
-  background: #E5E5E5;
-  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+  //border: 2px solid black;
+  //background: #E5E5E5;
+  //box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   background-position: 50%;
+  animation-delay: 0.5s;
+  animation-name: loaderx;
+  animation-duration: 2s;
+  animation-property: opacity;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+
 }
 .loader--dot:first-child img {
   width: 100%;
   height: 100%;
   border-radius: 100%;
   opacity: 0;
+  animation-delay: 0.5s;
   animation-name: loader1;
   animation-duration: 2s;
   animation-property: opacity;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 .loader--dot:nth-child(2) {
   animation-delay: 0.5s;
@@ -204,6 +249,7 @@ Stuff for the website animation loader
   text-align: center;
   display: block;
   animation-name: loader2;
+  animation-delay: 0.5s;
   animation-timing-function: ease-in;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -281,52 +327,71 @@ Stuff for the website animation loader
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+@keyframes loaderx{
+	from{
+	}
+	to{
+		border: 2px solid white;
 
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+  }
+}
 @keyframes loader1 {
   from {
     opacity: 0;
+    background: black;
   }
   to {
+	  
+    //border: 2px solid white;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
     opacity: 1;
+    background: white;
   }
 }
 @keyframes loader2 {
   from {
     transform: translateX(0);
-    background: #E5E5E5;
+    //background: #E5E5E5;
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   }
   to {
+	  background: white;
     transform: translateX(200px);
   }
 }
 @keyframes loader3 {
   from {
     transform: translateX(0);
-    background: #E5E5E5;
+    //background: #E5E5E5;
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   }
   to {
+    background: white;
+    //border: 2px solid white;
+    opacity: 1;
     transform: translateX(-200px);
   }
 }
 @keyframes loader4 {
   from {
     transform: translateX(0);
-    background: #E5E5E5;
+    //background: #E5E5E5;
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   }
   to {
+    background: #E5E5E5;
     transform: translateX(-400px);
   }
 }
 @keyframes loader5 {
   from {
     transform: translateX(0);
-    background: #E5E5E5;
+    //background: #E5E5E5;
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   }
   to {
+    background: #E5E5E5;
     transform: translateX(400px);
   }
 }
