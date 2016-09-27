@@ -156,14 +156,14 @@ body{
  */
 
 .size.ng-hide-add{
-	-webkit-animation: 0.5s fadeToCenter;
-	animation: 1.5s fadeToCenter;
+	-webkit-animation: 1s fadeToCenter;
+	animation: 1s fadeToCenter;
 }
 .to-loader.ng-hide-add{
 	position: static;
-	animation-delay: 0.5s;
-	-webkit-animation: 1s fadeToCenter;
-	animation: 1s fadeToCenter;
+	//animation-delay: 0.4s;
+	-webkit-animation: 1.2s fadeToCenter;
+	animation: 1.4s fadeToCenter;
 }
 @keyframes fadeToCenter{
 	from{
@@ -223,9 +223,9 @@ Stuff for the website animation loader
   //background: #E5E5E5;
   //box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   background-position: 50%;
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
   animation-name: loaderx;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-property: opacity;
   animation-timing-function: ease-in;
   animation-fill-mode: both;
