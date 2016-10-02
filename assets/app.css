@@ -3,7 +3,13 @@ body{
 	width: 100%;
 	background-color: black;
 }
-
+[ng-cloak].splash{
+	display: block !important;
+	text-align: center;
+}
+.splash{
+	display: none;
+}
 .size{
 	height: 70%;
 }
@@ -162,6 +168,7 @@ body{
 }
 .to-loader.ng-hide-add{
 	position: static;
+	//animation-delay: 0.4s;
 	-webkit-animation: 1.2s fadeToCenter;
 	animation: 1.0s fadeToCenter cubic-bezier(0.55, 0.09, 0.68, 0.53);
 }
