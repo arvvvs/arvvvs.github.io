@@ -21,13 +21,9 @@
     rel="stylesheet">
     <link href="./assets/app.css" rel="stylesheet">
 </head>
-<body> 
+<body ng-cloak=""> 
     <div layout-fill layout="column" ng-controller="mainController as main" >
-	    <div class="splash" ng-cloak="">
-		    <md-progress-circular md-diameter="96"></md-progress-circular> 
-	    </div>
-	    <div ng-cloak="">
-	    <div ng-show="main.front" class="size"> 
+	    <div show="main.front" class="size"> 
 	    <div ng-show="main.front" class="hide-typing">
             <div class="typing">
                 <span class="element"></span> <span class=
@@ -56,11 +52,6 @@
 
   </div>
     </div>
-    </div>
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
-        <script src="./node_modules/angular-aria/angular-aria.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-        -->
     <script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
     </script> 
