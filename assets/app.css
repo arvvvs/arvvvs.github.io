@@ -27,9 +27,7 @@ body{
         animation-property: opacity;
 	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
-	/*animation-delay: 1.5s;
-	 * 
-	 */
+	animation-delay: 1.5s;
 	animation-duration: 1.4s;
 }
 @keyframes bounce{
