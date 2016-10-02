@@ -9,14 +9,10 @@ body{
 }
 
 .bounce{
-/*	animation-delay: 3.5s;
- *	
- */
 	animation: bounce 1.5s infinite;
 
 }
 .down-icon{
-	//color: #2196F3;
 	cursor: pointer;
 	color: #039BE5; 
 	font-size: 2em;
@@ -28,7 +24,7 @@ body{
 	/*animation-delay: 1.5s;
 	 * 
 	 */
-	animation-duration: 2s;
+	animation-duration: 1.4s;
 }
 @keyframes bounce{
 	0%, 20%, 50%, 80%, 100%{
@@ -42,6 +38,9 @@ body{
 	}
 
 }
+/*
+ * The website portion that has the typing stuff
+ */
 .typing{
 	text-align: right;
 	margin-bottom: 7%;
@@ -163,7 +162,6 @@ body{
 }
 .to-loader.ng-hide-add{
 	position: static;
-	//animation-delay: 0.4s;
 	-webkit-animation: 1.2s fadeToCenter;
 	animation: 1.0s fadeToCenter cubic-bezier(0.55, 0.09, 0.68, 0.53);
 }
