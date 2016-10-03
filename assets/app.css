@@ -380,7 +380,7 @@ Stuff for the website animation loader
   }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 960px){
 @keyframes loader1 {
   from {
     opacity: 0;
@@ -432,7 +432,7 @@ Stuff for the website animation loader
   }
   to {
     background: #E5E5E5;
-    transform: translateX(-280%);
+    transform: translateX(-340%);
     border: 2px solid white;
   }
 }
@@ -445,7 +445,7 @@ Stuff for the website animation loader
   }
   to {
     background: #E5E5E5;
-    transform: translateX(280%);
+    transform: translateX(340%);
     border: 2px solid white;
   }
 }

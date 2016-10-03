@@ -2,10 +2,19 @@
 var personalWebsite;
 (function (personalWebsite) {
     var MainController = (function () {
-        function MainController() {
+        function MainController($scope) {
+            this.$scope = $scope;
             this.front = true;
+            var that = this;
+            angular.element('.size, .to-loader').bind('mousewheel', function (e) {
+                if (e.originalEvent.wheelDelta < 0) {
+                    that.front = false;
+                    console.log(that.front);
+                    $scope.$apply();
+                }
+            });
         }
-        MainController.$inject = [];
+        MainController.$inject = ['$scope'];
         return MainController;
     }());
     personalWebsite.MainController = MainController;
