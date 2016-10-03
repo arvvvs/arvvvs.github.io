@@ -7,7 +7,6 @@ module personalWebsite{
 		.controller('mainController', MainController)
 		.config(['$compileProvider', function ($compileProvider) {
 			$compileProvider.debugInfoEnabled(false);
-			console.log('its false');
 		}]);
 }	
 

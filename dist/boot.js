@@ -6,7 +6,6 @@ var personalWebsite;
         .controller('mainController', personalWebsite.MainController)
         .config(['$compileProvider', function ($compileProvider) {
             $compileProvider.debugInfoEnabled(false);
-            console.log('its false');
         }]);
 })(personalWebsite || (personalWebsite = {}));
 //# sourceMappingURL=boot.js.map
