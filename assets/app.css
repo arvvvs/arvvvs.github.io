@@ -182,6 +182,7 @@ Stuff for the website animation loader
 
 .loader {
   height: 100px;
+  width: 100%;
   width: 1vw;
   position: absolute;
   top: 0;
@@ -378,6 +379,8 @@ Stuff for the website animation loader
   	box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   }
 }
+
+@media screen and (min-width: 700px){
 @keyframes loader1 {
   from {
     opacity: 0;
@@ -402,7 +405,8 @@ Stuff for the website animation loader
   to {
 	  background: white;
     border: 2px solid white;
-    transform: translateX(200px);
+    transform: translateX(170%);
+
   }
 }
 @keyframes loader3 {
@@ -416,7 +420,7 @@ Stuff for the website animation loader
     background: white;
     border: 2px solid white;
     opacity: 1;
-    transform: translateX(-200px);
+    transform: translateX(-170%);
   }
 }
 @keyframes loader4 {
@@ -428,7 +432,7 @@ Stuff for the website animation loader
   }
   to {
     background: #E5E5E5;
-    transform: translateX(-400px);
+    transform: translateX(-280%);
     border: 2px solid white;
   }
 }
@@ -441,9 +445,80 @@ Stuff for the website animation loader
   }
   to {
     background: #E5E5E5;
-    transform: translateX(400px);
+    transform: translateX(280%);
     border: 2px solid white;
   }
 }
 
+}
+@media screen and (min-width: 1280px){
+@keyframes loader1 {
+  from {
+    opacity: 0;
+    background: black;
+    border: 1px solid black;
+  }
+  to {
+	  
+    //border: 2px solid white;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+    opacity: 1;
+    background: white;
+  }
+}
+@keyframes loader2 {
+  from {
+    transform: translateX(0);
+    //background: #E5E5E5;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+    border: 1px solid black;
+  }
+  to {
+	  background: white;
+    border: 2px solid white;
+    transform: translateX(200%);
+
+  }
+}
+@keyframes loader3 {
+  from {
+    transform: translateX(0);
+    //background: #E5E5E5;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+    border: 1px solid black;
+  }
+  to {
+    background: white;
+    border: 2px solid white;
+    opacity: 1;
+    transform: translateX(-200%);
+  }
+}
+@keyframes loader4 {
+  from {
+    transform: translateX(0);
+    //background: #E5E5E5;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+    border: 1px solid black;
+  }
+  to {
+    background: #E5E5E5;
+    transform: translateX(-400%);
+    border: 2px solid white;
+  }
+}
+@keyframes loader5 {
+  from {
+    transform: translateX(0);
+    //background: #E5E5E5;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
+    border: 1px solid black;
+  }
+  to {
+    background: #E5E5E5;
+    transform: translateX(400%);
+    border: 2px solid white;
+  }
+}
+}
 
