@@ -6,10 +6,23 @@ var personalWebsite;
             this.$scope = $scope;
             this.front = true;
             var that = this;
-            angular.element('.size, .to-loader').bind('mousewheel', function (e) {
+            angular.element(document).bind('mousewheel', function (e) {
                 if (e.originalEvent.wheelDelta < 0) {
                     that.front = false;
-                    console.log(that.front);
+                    $scope.$apply();
+                }
+                else {
+                    that.front = true;
+                    $scope.$apply();
+                }
+            });
+            angular.element(document).keydown(function (e) {
+                if (e.which === 40) {
+                    that.front = false;
+                    $scope.$apply();
+                }
+                else if (e.which === 38) {
+                    that.front = true;
                     $scope.$apply();
                 }
             });
