@@ -6,8 +6,8 @@ module personalWebsite{
 		.module('personalWebsite', ['ngMaterial', 'ngAnimate'])
 		.controller('mainController', MainController)
 		.config(['$compileProvider', function ($compileProvider) {
-			$compileProvider.debugInfoEnabled(true);
-			console.log('its true');
+			$compileProvider.debugInfoEnabled(false);
+			console.log('its false');
 		}]);
 }	
 
