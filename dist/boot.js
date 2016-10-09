@@ -2,10 +2,10 @@
 var personalWebsite;
 (function (personalWebsite) {
     angular
-        .module('personalWebsite', ['ngMaterial', 'ngAnimate'])
+        .module('personalWebsite', ['ngAnimate'])
         .controller('mainController', personalWebsite.MainController)
         .config(['$compileProvider', function ($compileProvider) {
-            $compileProvider.debugInfoEnabled(false);
+            $compileProvider.debugInfoEnabled(true);
         }]);
 })(personalWebsite || (personalWebsite = {}));
 //# sourceMappingURL=boot.js.map

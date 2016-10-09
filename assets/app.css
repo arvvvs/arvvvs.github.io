@@ -1,7 +1,15 @@
-body{
-	height: 100%;
-	width: 100%;
+html,body{
+`	height: 100%;
+	margin: 0;
 	background-color: black;
+	position: static;
+}
+.red{
+	height:50px;
+	background-color:red;
+}
+.header{
+	height: 100vh;
 }
 .size{
 	height: 70%;
@@ -152,13 +160,18 @@ body{
 /*
  * animation for the down button to the loader
  */
-
-.size.ng-hide-add{
-	-webkit-animation: 1.5s fadeToCenter;
-	animation: 1.5s fadeToCenter cubic-bezier(0.55, 0.09, 0.68, 0.53);
+.to-loader{
+	position: absolute;
+	bottom:0;
+	margin:auto;
+	left: 50%;
+	right: 50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
+
 .to-loader.ng-hide-add{
-	position: static;
 	animation-delay: 0.4s;
 	-webkit-animation: 1s fadeToCenter;
 	animation: 1s fadeToCenter cubic-bezier(0.55, 0.09, 0.68, 0.53);
@@ -172,13 +185,12 @@ body{
 		opacity: 0;
 		-webkit-transform: translate3d(0, -100%, 0);
 		transform: translate3d(0, -100%, 0);
-}
-}
 
+}
+}
 /*
 Stuff for the website animation loader
 */
-
 
 .loader {
   height: 100px;
@@ -521,4 +533,15 @@ Stuff for the website animation loader
   }
 }
 }
-
+/*About Me*/
+.AboutMe{
+	color: white;
+	font-size: 5em;
+}
+.about-me-cursor{
+	font-family: 'Ubuntu', sans-serif;
+	opacity: 1;
+	-webkit-animation: blink .7s infinite;
+	-moz-animation: blink .7s infinite;
+	animation: blink .7s infinite;
+}

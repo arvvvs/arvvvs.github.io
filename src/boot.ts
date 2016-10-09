@@ -3,10 +3,10 @@
 
 module personalWebsite{
 	angular
-		.module('personalWebsite', ['ngMaterial', 'ngAnimate'])
+		.module('personalWebsite', ['ngAnimate'])
 		.controller('mainController', MainController)
 		.config(['$compileProvider', function ($compileProvider) {
-			$compileProvider.debugInfoEnabled(false);
+			$compileProvider.debugInfoEnabled(true);
 		}]);
 }	
 
