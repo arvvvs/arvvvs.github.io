@@ -551,7 +551,7 @@ Stuff for the website animation loader
 }
 .about-me-cursor{
 	font-size: 1.5em;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Ubuntu Mono', monospace;
 	opacity: 1;
 	-webkit-animation: blink .7s infinite;
 	-moz-animation: blink .7s infinite;
