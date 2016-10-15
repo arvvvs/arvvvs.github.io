@@ -536,10 +536,22 @@ Stuff for the website animation loader
 /*About Me*/
 .AboutMe{
 	color: white;
-	font-size: 5em;
+	margin-right: 1em;
+	margin-left:5%;
+	font-family: 'Ubuntu Mono', monospace;
+}
+.about-me{
+
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 2em;
+}
+.about-me-content *{
+	margin:0;
+	padding:0;
 }
 .about-me-cursor{
-	font-family: 'Ubuntu', sans-serif;
+	font-size: 2em;
+	font-family: 'Ubuntu Mono', sans-serif;
 	opacity: 1;
 	-webkit-animation: blink .7s infinite;
 	-moz-animation: blink .7s infinite;

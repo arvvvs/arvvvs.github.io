@@ -12,10 +12,6 @@ module personalWebsite {
 					that.front = false;
 					$scope.$apply();
 				}
-				else{
-					that.front = true;
-					$scope.$apply();
-				}
 			});
 			angular.element(document).keydown(function(e){
 				if(e.which===40){
