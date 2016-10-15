@@ -550,7 +550,7 @@ Stuff for the website animation loader
 	padding:0;
 }
 .about-me-cursor{
-	font-size: 2em;
+	font-size: 1.5em;
 	font-family: 'Ubuntu Mono', sans-serif;
 	opacity: 1;
 	-webkit-animation: blink .7s infinite;
