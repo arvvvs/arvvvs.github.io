@@ -392,6 +392,14 @@ Stuff for the website animation loader
   	box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   }
 }
+@media screen and (max-width: 960px){
+	.header{
+		display: none;
+	}
+	.to-loader{
+		display: none;
+	}
+}
 @media screen and (min-width: 960px){
 @keyframes loader1 {
   from {
@@ -532,6 +540,7 @@ Stuff for the website animation loader
   }
 }
 }
+
 /*About Me*/
 .AboutMe{
 	padding-top: 5%;
@@ -549,6 +558,11 @@ Stuff for the website animation loader
 	margin:0;
 	padding:0;
 	font-size: 1.3em;
+}
+.about-me-content h2 span{
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
 }
 .about-me-cursor{
 	font-size: 2em;

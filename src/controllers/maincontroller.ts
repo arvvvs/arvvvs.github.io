@@ -2,13 +2,19 @@
 
 module personalWebsite {
 	export class MainController{
-		static $inject = ['$scope', '$location', '$anchorScroll'];
+		static $inject = ['$scope', '$location', '$anchorScroll', '$window'];
 		constructor(
 			private $scope: angular.IScope,
 			private $anchorScroll: angular.IAnchorScrollService,
-			private $location: angular.ILocationService
+			private $location: angular.ILocationService,
+			private $window: angular.IWindowService
 		){
 			let that = this;
+			if($window.innerWidth<960){
+				that.screenSize = true;
+				that.front = false;
+				console.log(that.screenSize);
+			}
 			angular.element(document).bind('mousewheel', function(e){
 				if(e.originalEvent.wheelDelta < 0){
 					that.front = false;
@@ -22,7 +28,6 @@ module personalWebsite {
 				}
 			});
 			angular.element(document).ready(function(){
-				console.log(angular.element('a[href^="#"]')[0]);
 				angular.element('a[href^="#"]').on('click',function(event){
 					console.log('click');
 				});
@@ -40,6 +45,8 @@ module personalWebsite {
 			});
 		}
 		front: boolean = true;
+		screenSize: boolean = false;
+		
 	}
 	
  	$(function() {

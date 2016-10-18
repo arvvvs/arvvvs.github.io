@@ -23,8 +23,8 @@
     rel="stylesheet">--> 
     <link href="./assets/app.css" rel="stylesheet">
     <body ng-cloak="" ng-controller="mainController as main">
-	    <header class="header">
-	    <div ng-show="main.front" class="hide-typing">
+	    <header>
+	    <div ng-show="main.front" class="hide-typing header">
             <div class="typing">
                 <span class="element"></span> <span class=
                 "typed-cursor"></span>
@@ -39,17 +39,17 @@
                 </div>
             </div>
 		</div>
-	  <div ng-show="!main.front" ng-include="'./dist/views/landing.html'">
+	  <div ng-show="!main.front" ng-include="'./dist/views/landing.html'" class="header">
   </div>
 	    </header>
 	    <div ng-show="!main.front" id="anchor" class="AboutMe">
 		    <span class="about-me">arverma.me:~/$ whoami</span><span class="about-me-cursor"> &#9608</span> 
 		    <div class="about-me-content">
-		    <h2>Developer, person who created this website, and enjoyer of good and spicy foods</h2>
+			    <h2><span ng-show="!screenSize">Akshay Verma-</span>Developer, person who created this website, and enjoyer of good and spicy foods</h2>
 		    <p>*Occasional long distance runner, reader, and avid scifi fan<p>
 		    <br />
-		    <p>I started coding when I picked up books from my local library on coding.  I learnt basic HTML, BASIC and C++ from those books, but unfortunately due to high school I was unable to carry on. While studying Math in college I managed to get into a Python class and rest is history.</p>
-		    <p>These days I teach programming to people as a Codecademy Adviser- most of my work is with JavaScript, Angular and Python.  I play with Node in my spare time, and am currently looking for a fultime position. You can find my printable resume above.  </p>
+		    <p>I started coding when I picked up books from my local library on coding.  I learnt basic HTML, BASIC and C++ from those books. While studying Math in college I managed to get into a Python class and rest is history.</p>
+		    <p>These days I teach programming to people as a Codecademy Adviser- most of my work is with JavaScript, Angular and Python.  I play with Node in my spare time, and am currently looking for a fultime position. You can find my printable resume <a href="./dist/views/resume.pdf">here</a>.  </p>
 
 		    </div>
 		    <br /> 

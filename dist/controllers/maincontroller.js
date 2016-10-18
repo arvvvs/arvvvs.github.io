@@ -2,12 +2,19 @@
 var personalWebsite;
 (function (personalWebsite) {
     var MainController = (function () {
-        function MainController($scope, $anchorScroll, $location) {
+        function MainController($scope, $anchorScroll, $location, $window) {
             this.$scope = $scope;
             this.$anchorScroll = $anchorScroll;
             this.$location = $location;
+            this.$window = $window;
             this.front = true;
+            this.screenSize = false;
             var that = this;
+            if ($window.innerWidth < 960) {
+                that.screenSize = true;
+                that.front = false;
+                console.log(that.screenSize);
+            }
             angular.element(document).bind('mousewheel', function (e) {
                 if (e.originalEvent.wheelDelta < 0) {
                     that.front = false;
@@ -21,7 +28,6 @@ var personalWebsite;
                 }
             });
             angular.element(document).ready(function () {
-                console.log(angular.element('a[href^="#"]')[0]);
                 angular.element('a[href^="#"]').on('click', function (event) {
                     console.log('click');
                 });
@@ -38,7 +44,7 @@ var personalWebsite;
                 });
             });
         }
-        MainController.$inject = ['$scope', '$location', '$anchorScroll'];
+        MainController.$inject = ['$scope', '$location', '$anchorScroll', '$window'];
         return MainController;
     }());
     personalWebsite.MainController = MainController;
