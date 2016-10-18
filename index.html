@@ -43,9 +43,10 @@
   </div>
 	    </header>
 	    <div ng-show="!main.front" id="anchor" class="AboutMe">
-		    <span class="about-me">arverma.me:~/$ whoami</span><span class="about-me-cursor"> &#9608</span> 
+		    <span class="about-me">arverma.me:~/$ whoami</span><span class="about-me-cursor" ng-show="screenSize"> &#9608</span> 
 		    <div class="about-me-content">
-			    <h2><span ng-show="!screenSize">Akshay Verma-</span>Developer, person who created this website, and enjoyer of good and spicy foods</h2>
+			    <span ng-show="!screenSize"><h2>Akshay Verma</h2></span>
+			    <h2>Developer, person who created this website, and enjoyer of good and spicy foods</h2>
 		    <p>*Occasional long distance runner, reader, and avid scifi fan<p>
 		    <br />
 		    <p>I started coding when I picked up books from my local library on coding.  I learnt basic HTML, BASIC and C++ from those books. While studying Math in college I managed to get into a Python class and rest is history.</p>

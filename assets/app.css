@@ -559,8 +559,9 @@ Stuff for the website animation loader
 	padding:0;
 	font-size: 1.3em;
 }
-.about-me-content h2 span{
+.about-me-content span{
 	font-size: 1em;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
