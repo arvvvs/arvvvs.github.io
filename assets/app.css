@@ -392,7 +392,6 @@ Stuff for the website animation loader
   	box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
   }
 }
-
 @media screen and (min-width: 960px){
 @keyframes loader1 {
   from {
@@ -425,7 +424,6 @@ Stuff for the website animation loader
 @keyframes loader3 {
   from {
     transform: translateX(0);
-    //background: #E5E5E5;
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.15);
     border: 1px solid black;
   }
@@ -549,12 +547,44 @@ Stuff for the website animation loader
 .about-me-content *{
 	margin:0;
 	padding:0;
+	font-size: 1.3em;
 }
 .about-me-cursor{
-	font-size: 1.5em;
+	font-size: 2em;
 	font-family: 'Ubuntu Mono', monospace;
 	opacity: 1;
 	-webkit-animation: blink .7s infinite;
 	-moz-animation: blink .7s infinite;
 	animation: blink .7s infinite;
+}
+/*About Me Skills*/
+.skills{
+	display: flex;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+}
+.header-row{
+	display: flex;
+	flex: 1 100%;
+}
+.header-row h3{
+	margin: 0;
+	margin-top: 1%;
+	padding: 0;
+	font-size: 1.4em;
+	font-size: 2.9vh;
+}
+.skills-row{
+	display: flex;
+	flex-direction: flex-row;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+}
+.skill-column{
+	width: 20%;
+	font-size: 1.3em;
+	font-size: 2.6vh;
 }
