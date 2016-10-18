@@ -27,10 +27,8 @@ var personalWebsite;
                 });
             });
             $scope.$on('$includeContentLoaded', function (e) {
-                console.log('hello');
                 angular.element('a[href^="#"]').on('click', function (event) {
                     var target = angular.element('#anchor');
-                    console.log(target);
                     if (target.length) {
                         event.preventDefault();
                         $('html, body').stop().animate({
