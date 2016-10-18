@@ -10,6 +10,7 @@ html,body{
 }
 .header{
 	height: 100vh;
+	padding-down: 10px;
 }
 .size{
 	height: 70%;

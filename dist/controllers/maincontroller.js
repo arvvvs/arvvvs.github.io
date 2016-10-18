@@ -2,8 +2,10 @@
 var personalWebsite;
 (function (personalWebsite) {
     var MainController = (function () {
-        function MainController($scope) {
+        function MainController($scope, $anchorScroll, $location) {
             this.$scope = $scope;
+            this.$anchorScroll = $anchorScroll;
+            this.$location = $location;
             this.front = true;
             var that = this;
             angular.element(document).bind('mousewheel', function (e) {
@@ -17,13 +19,28 @@ var personalWebsite;
                     that.front = false;
                     $scope.$apply();
                 }
-                else if (e.which === 38) {
-                    that.front = true;
-                    $scope.$apply();
-                }
+            });
+            angular.element(document).ready(function () {
+                console.log(angular.element('a[href^="#"]')[0]);
+                angular.element('a[href^="#"]').on('click', function (event) {
+                    console.log('click');
+                });
+            });
+            $scope.$on('$includeContentLoaded', function (e) {
+                console.log('hello');
+                angular.element('a[href^="#"]').on('click', function (event) {
+                    var target = angular.element('#anchor');
+                    console.log(target);
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').stop().animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
             });
         }
-        MainController.$inject = ['$scope'];
+        MainController.$inject = ['$scope', '$location', '$anchorScroll'];
         return MainController;
     }());
     personalWebsite.MainController = MainController;

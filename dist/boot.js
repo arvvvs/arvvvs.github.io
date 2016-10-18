@@ -5,7 +5,7 @@ var personalWebsite;
         .module('personalWebsite', ['ngAnimate'])
         .controller('mainController', personalWebsite.MainController)
         .config(['$compileProvider', function ($compileProvider) {
-            $compileProvider.debugInfoEnabled(true);
+            $compileProvider.debugInfoEnabled(false);
         }]);
 })(personalWebsite || (personalWebsite = {}));
 //# sourceMappingURL=boot.js.map
