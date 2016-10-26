@@ -1,0 +1,115 @@
+/*
+ * The website portion that has the typing stuff
+ */
+.typing{
+	text-align: right;
+	margin-bottom: 7%;
+}
+.element{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-weight: 300;
+	font-size: 13em;
+	font-size: 15vmax;
+	text-align: right;
+}
+.typed-cursor {
+    display: inline;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13em;
+    font-size: 15vmax;
+    opacity: 1;
+    -webkit-animation: blink .7s infinite;
+    -moz-animation: blink .7s infinite;
+    animation: blink .7s infinite;
+}
+.hide-typing.ng-hide-add{
+  -webkit-animation:0.5s fadeOutUp;
+  animation:0.5s fadeOutUp;
+}
+
+@keyframes fadeOutUp {
+	from {
+		opacity: 1;
+		
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+}
+
+
+@-webkit-keyframes fadeOutUp {
+	from {
+		opacity: 1;
+		
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+}
+@media screen and (max-width: 500px){
+	.element{
+		font-size: 100px;
+	}
+	.typed-cursor{
+		font-size: 100px;
+	}
+	
+}
+@keyframes down-button-loader{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+

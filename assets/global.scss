@@ -1,0 +1,16 @@
+@import "partials/bounce";
+@import "partials/down_button";
+@import "partials/loader";
+@import "partials/about_me";
+@import "partials/about_me_skills";
+@import "partials/typing";
+html,body{
+	height: 100%;
+	margin: 0;
+	background-color: black;
+	position: static;
+}
+.header{
+	height: 100vh;
+	padding-down: 10px;
+}
