@@ -579,11 +579,16 @@ Stuff for the website animation loader
 	display: -moz-box;
 	display: -webkit-box;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	flex-wrap: no-wrap;
+	-webkit-flex-wrap: no-wrap;
 }
 .header-row{
 	display: flex;
+	display: -moz-box;
+	display: -webkit-box;
 	flex: 1 100%;
 }
 .header-row h3{
@@ -595,7 +600,9 @@ Stuff for the website animation loader
 }
 .skills-row{
 	display: flex;
+	display: -webkit-flex;
 	flex-direction: flex-row;
+	-webkit-flex-direction: -webkit-flex-row;
 	flex-wrap: no-wrap;
 	justify-content: space-between;
 }
