@@ -4,10 +4,6 @@ html,body{
 	background-color: black;
 	position: static;
 }
-.red{
-	height:50px;
-	background-color:red;
-}
 .header{
 	height: 100vh;
 	padding-down: 10px;
